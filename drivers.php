@@ -4,6 +4,7 @@ if (isset($_SESSION['admin_name'])== false){
     header("Location: login.php");
 }
 ?>
+
 <?php include ("db.php");
 include_once "functions.php";
 $class = new helper($conn);
@@ -11,6 +12,7 @@ if (isset($_GET['delete'])){
     $class->delete_driver($_GET);
 }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
